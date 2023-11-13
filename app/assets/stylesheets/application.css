@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to top right, violet, indigo, blue, green, yellow, orange, red);
+  border-radius: 50%;
+  animation: rainbowBackground 1s linear infinite;
+}
+
+.centered-content {
+  text-align: center;
+  z-index: 1;
+}
+
+@keyframes rainbowBackground {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
